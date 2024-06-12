@@ -37,14 +37,5 @@
   }
 }
 
-body {
-    background-image: url('../src/images/background_image/10009046.jpg');
-    background-size: cover; /* Cover the entire background */
-    background-position: center; /* Center the background image */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; /* Align items to the top */
-    height: 100vh;
-    margin: 0;
-  }
+
  

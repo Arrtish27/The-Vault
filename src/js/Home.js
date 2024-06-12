@@ -3,7 +3,7 @@ import '../css/Home.css';
 import { Link } from 'react-router-dom';
 const Home = () => {
   return (
-    <div className="container">
+    <div className="home-container">
       <div className="text-container">
         <h1>Welcome to the Vault!</h1>
         <h2>This is a D&D custom app that's in development. For further use, please contact the developer.</h2>

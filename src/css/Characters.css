@@ -1,0 +1,77 @@
+.characters-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .bordered {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 5px; /* Add some space between components */
+    margin-top: 5px;
+  }
+  
+  .main-col-1{
+    flex: 4; /* Distribute remaining space evenly */
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .main-col-2 {
+    flex: 8; /* Distribute remaining space evenly */
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .row-1-1 {
+    display: flex;
+    flex:4;
+  }
+  
+  .stats-row {
+    display: flex;
+    flex:8;
+  }
+
+  .score-col{
+    display: flex;
+    flex: 4;
+  }
+
+  .proficiency-col{
+    display: flex;
+    flex: 8;
+  }
+
+  .stats-table {
+    border-collapse: collapse; /* Collapse borders between cells */
+    width: 100%; /* Make the table full-width */
+    table-layout: fixed;
+  }
+  
+  .stats-table th, .stats-table td {
+    border: 1px solid black; /* Set all borders to 1px solid black */
+    padding: 8px; /* Example padding for cells */
+    text-align: center; /* Center-align text within cells */
+  }
+
+
+  .row-2-1 {
+    display: flex;
+    flex:3;
+  }
+
+  .row-2-2 {
+    display: flex;
+    flex:9;
+  }
+  
+  .column-1-1-1,
+  .column-1-1-2,
+  .column-1-2-1,
+  .column-1-2-2,
+  .column-2-1 {
+    flex: 1; /* Distribute remaining space evenly */
+  }
+  
