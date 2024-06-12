@@ -6,12 +6,25 @@ const Characters = () => {
   return (
     <div className='characters-container'>
       <div className='main-col-1 bordered'>
-        <div className='row-1-1 bordered'>
-          <div className='column-1-1-1 bordered'>
-            <div className='row-1-1-1-1 bordered'></div>
-            <div className='row-1-1-1-2 bordered'></div>
+        <div className='profile-row bordered'>
+          <div className='profile-section bordered'>
+            <div className='profile-pic bordered'></div>
+            <div className='charc-intro bordered'>
+                Nicol Bolas
+            </div>
           </div>
-          <div className='column-1-1-2 bordered'></div>
+          <div className='hp-ac-section bordered'>
+            <table className='hp-ac-table'>
+                <tbody>          
+                    <tr>
+                        <td>50/50</td>
+                    </tr>
+                    <tr>
+                        <td>16</td>
+                    </tr>
+                </tbody>
+            </table>
+          </div>
         </div>
         <div className='stats-row bordered'>
           <div className='score-col bordered'>
@@ -44,12 +57,39 @@ const Characters = () => {
                 </tbody>
             </table>
           </div>
-          <div className='proficiency-col bordered'></div>
+          <div className='skill-col bordered'>
+            <div className='profs-list'>
+                <h3>Use Magical Device</h3>
+            </div>
+          </div>
         </div>
       </div>
       <div className='main-col-2 bordered'>
-        <div className='row-2-1 bordered'>
-          <div className='column-2-1 bordered'>{/* table of 1 * 4 (rows * columns) */}</div>
+        <div className='bonu bordered'>
+            <table className='bonuses-table'>
+                <tbody>          
+                    <tr>
+                        <td className='speed-init'>+2</td>
+                        <td className='atk-bonus'>+5</td>
+                        <td className='spell-no'>+8</td>
+                        <td>
+                            <table className='magic-items-table'>
+                                <tbody>
+                                    <tr>
+                                        <td>Magic Item 1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Magic Item 2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Magic Item 3</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div className='row-2-2 bordered'></div>
       </div>

@@ -11,27 +11,62 @@
   }
   
   .main-col-1{
-    flex: 4; /* Distribute remaining space evenly */
+    flex: 3.8; /* Distribute remaining space evenly */
     display: flex;
     flex-direction: column;
   }
-
-
-  .main-col-2 {
-    flex: 8; /* Distribute remaining space evenly */
-    display: flex;
-    flex-direction: column;
-  }
-
   
-  .row-1-1 {
+  .profile-row {
     display: flex;
-    flex:4;
+    flex: 4.5;
+    flex-direction: row;
+  }
+
+  .profile-section{
+    display: flex;
+    flex: 8.5;
+    flex-direction: column;
+  }
+
+  .hp-ac-section{
+    display: flex;
+    flex: 3.5;
+    flex-direction: column;
+  }
+
+  .profile-pic{
+    background-image: url('../images/Screenshot 2024-06-13 035748.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* Adjust background-size as needed */
+    background-position: center; /* Adjust background-position as needed */
+    display: flex;
+    flex: 11.25;
+  }
+
+  .charc-intro {
+    display: flex;
+    flex: 0.75;
+  }
+
+
+  .hp-ac-table{
+
+    border-collapse: collapse; /* Collapse borders between cells */
+    width: 100%; /* Make the table full-width */
+    height: 100%;
+    table-layout: fixed;
+  }
+
+  .hp-ac-table th, .hp-ac-table tr{
+    border: 1px solid black; /* Set all borders to 1px solid black */
+    padding: 8px; /* Example padding for cells */
+    word-wrap: break-word;
+    text-align: center; /* Center-align text within cells */
   }
   
   .stats-row {
     display: flex;
-    flex:8;
+    flex: 7.5;
+    flex-direction: row;
   }
 
   .score-col{
@@ -39,7 +74,7 @@
     flex: 4;
   }
 
-  .proficiency-col{
+  .skill-col {
     display: flex;
     flex: 8;
   }
@@ -54,24 +89,74 @@
     border: 1px solid black; /* Set all borders to 1px solid black */
     padding: 8px; /* Example padding for cells */
     text-align: center; /* Center-align text within cells */
+    word-wrap: break-word;
   }
 
 
-  .row-2-1 {
+  .main-col-2 {
+    flex: 8.2; /* Distribute remaining space evenly */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .bonuses-row {
     display: flex;
     flex:3;
   }
+
+  .bonuses-table {
+    border-collapse: collapse; /* Collapse borders between cells */
+    width: 100%; /* Make the table full-width */
+    table-layout: fixed; /* Ensure fixed table layout */
+  }
+  
+  .bonuses-table th, .bonuses-table td {
+    border: 1px solid black; /* Set all borders to 1px solid black */
+    padding: 8px; /* Example padding for cells */
+    text-align: center; /* Center-align text within cells */
+    position: relative; /* Ensure positioning context for pseudo-elements */
+    width: 25%; /* Set a fixed width for each cell */
+    max-width: 150px; /* Optional: Set a maximum width for each cell */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+  }
+  
+  .bonuses-table td::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: contain; /* Adjust background-size as needed */
+    background-position: center; /* Adjust background-position as needed */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    opacity: 0.20; /* Adjust opacity to fade background image */
+    z-index: -1; /* Ensure the pseudo-element is behind the text */
+  }
+  
+  .bonuses-table .speed-init::before {
+    background-image: url('../images/character_bckgrnds/magic-boot.png');
+  }
+  
+  .bonuses-table .atk-bonus::before {
+    background-image: url('../images/character_bckgrnds/sword.png');
+  }
+  
+  .bonuses-table .spell-no::before {
+    background-image: url('../images/character_bckgrnds/shield.png');
+  }
+  
+  .bonuses-table td {
+    color: black; /* Adjust text color as needed */
+    font-weight: bold; /* Increase font weight for stronger text */
+    font-size: 24px; /* Increase font size as needed */
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
 
   .row-2-2 {
     display: flex;
     flex:9;
   }
   
-  .column-1-1-1,
-  .column-1-1-2,
-  .column-1-2-1,
-  .column-1-2-2,
-  .column-2-1 {
-    flex: 1; /* Distribute remaining space evenly */
-  }
   
