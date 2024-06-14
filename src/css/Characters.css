@@ -3,8 +3,15 @@
     height: 100vh;
   }
   
-  .bordered {
-    border: 2px solid black;
+  .bordered-black{
+    border: 2px solid #000000;
+  }
+
+  .bordered-white{
+    border: 2px solid #ffffff;
+  }
+
+  .padded{
     padding: 10px;
     margin-bottom: 5px; /* Add some space between components */
     margin-top: 5px;
@@ -54,6 +61,7 @@
     width: 100%; /* Make the table full-width */
     height: 100%;
     table-layout: fixed;
+
   }
 
   .hp-ac-table th, .hp-ac-table tr{
@@ -61,8 +69,27 @@
     padding: 8px; /* Example padding for cells */
     word-wrap: break-word;
     text-align: center; /* Center-align text within cells */
+    font-size: 32px;
+    
   }
+
+  .hp-bckground{
+    background-image: url('../images/character_bckgrnds/heart.png');
+    background-size: contain; /* Adjust background-size as needed */
+    background-position: center; /* Adjust background-position as needed */
+    background-repeat: no-repeat; /* Prevent background image from repeating *//* Adjust opacity to fade background image */
+    z-index: -1; /* Ensure the pseudo-element is behind the text */
   
+  }
+
+  .ac-bckground{
+    background-image: url('../images/character_bckgrnds/shield.png');
+    background-size: contain; /* Adjust background-size as needed */
+    background-position: center; /* Adjust background-position as needed */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    z-index: -1; /* Ensure the pseudo-element is behind the text */
+  }
+
   .stats-row {
     display: flex;
     flex: 7.5;
@@ -77,6 +104,11 @@
   .skill-col {
     display: flex;
     flex: 8;
+  }
+
+  .profs-list{
+    margin-left: 20px;
+    width:100%
   }
 
   .stats-table {
@@ -108,11 +140,14 @@
     border-collapse: collapse; /* Collapse borders between cells */
     width: 100%; /* Make the table full-width */
     table-layout: fixed; /* Ensure fixed table layout */
-  }
+    padding: 10px;
+    margin-top: 15px;
+
+}
   
   .bonuses-table th, .bonuses-table td {
-    border: 1px solid black; /* Set all borders to 1px solid black */
-    padding: 8px; /* Example padding for cells */
+    border: 1px solid #FFFAEA; /* Set all borders to 1px solid black */
+    padding: 10px; /* Example padding for cells */
     text-align: center; /* Center-align text within cells */
     position: relative; /* Ensure positioning context for pseudo-elements */
     width: 25%; /* Set a fixed width for each cell */
@@ -143,7 +178,7 @@
   }
   
   .bonuses-table .spell-no::before {
-    background-image: url('../images/character_bckgrnds/shield.png');
+    background-image: url('../images/character_bckgrnds/magic.png');
   }
   
   .bonuses-table td {
@@ -154,9 +189,31 @@
   }
   
 
-  .row-2-2 {
+  .extra-details {
     display: flex;
     flex:9;
+    margin-top: 100px;
+    margin-bottom: 15px;
   }
-  
-  
+
+  .celadon_green{
+    background-color: #B8D8BA;
+    z-index: -1000;
+  }
+  .pastel_pink{
+    background-color: #D8B8BA;
+    z-index: -1000;
+  }
+  .dark_green{
+    background-color: #004643;
+    color: #ffffff;
+    z-index: -1000;
+  }
+  .cream{
+    background-color: #FFFAEA;
+    z-index: -1000;
+  }
+  .pink{
+    background-color: #FAB3A4;
+    z-index: -1000;
+  }
