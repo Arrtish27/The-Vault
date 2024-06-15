@@ -6,7 +6,7 @@ const Adventures = () => {
         <div>
             <h1>Adventures</h1>
         </div>
-        <div><Link to="/" className="button">Back to Home</Link></div>   
+        <div><Link to="/home" className="button">Back to Home</Link></div>   
       {/* Add your content here */}
     </div>
   );

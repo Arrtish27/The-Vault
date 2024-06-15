@@ -93,7 +93,7 @@ const Characters = () => {
         </div>
         <div className='extra-details bordered-black padded celadon_green'></div>
       </div>
-      <div><Link to="/" className="button">Back to Home</Link></div>
+      <div><Link to="/home" className="button">Back to Home</Link></div>
     </div>
   );
 };

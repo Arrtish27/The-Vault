@@ -8,7 +8,7 @@ import ItemSearch from './js/ItemSearch';
 import Adventures from './js/Adventures';
 import RuleSearch from './js/RuleSearch';
 import Home from './js/Home';
-import Login from './js/Login';
+import Login from '../src/js/Login';
 import { AuthProvider, useAuth } from './js/AuthContext';
 
 const ProtectedRoute = ({ element: Component, ...rest }) => {
