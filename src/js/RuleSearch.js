@@ -6,7 +6,7 @@ const RuleSearch = () => {
         <div>
             <h1>Rule Search Page</h1>
         </div>
-        <div><Link to="/" className="button">Back to Home</Link></div>   
+        <div><Link to="/home" className="button">Back to Home</Link></div>   
     </div>
   );
 };
