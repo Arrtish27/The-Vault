@@ -6,7 +6,7 @@ const ItemSearch = () => {
         <div>
             <h1>Item Search Page</h1>
         </div>
-        <div><Link to="/" className="button">Back to Home</Link></div>   
+        <div><Link to="/home" className="button">Back to Home</Link></div>   
     </div>
   );
 };

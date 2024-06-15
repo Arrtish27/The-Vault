@@ -6,7 +6,7 @@ const Partys = () => {
         <div>
             <h1>Partys Page</h1>
         </div>
-        <div><Link to="/" className="button">Back to Home</Link></div>   
+        <div><Link to="/home" className="button">Back to Home</Link></div>   
     </div>
   );
 };
