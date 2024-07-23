@@ -8,7 +8,8 @@ import ItemSearch from './js/ItemSearch';
 import Adventures from './js/Adventures';
 import RuleSearch from './js/RuleSearch';
 import Home from './js/Home';
-import Login from '../src/js/Login';
+import Login from './js/Login';
+import CharacterList from '../src/js/CharacterList';
 import { AuthProvider, useAuth } from './js/AuthContext';
 
 const ProtectedRoute = ({ element: Component, ...rest }) => {
@@ -20,9 +21,10 @@ const App = () => {
   return (
     <AuthProvider>
         <Routes>
-          <Route path="*" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/home" element={<ProtectedRoute element={Home} />} />
-          <Route path="/characters" element={<ProtectedRoute element={Characters} />} />
+          <Route path="/characters-list" element={<ProtectedRoute element={CharacterList} />} />
+          <Route path="/characters/:id" element={<ProtectedRoute element={Characters} />} />
           <Route path="/partys" element={<ProtectedRoute element={Partys} />} />
           <Route path="/item-search" element={<ProtectedRoute element={ItemSearch} />} />
           <Route path="/adventure" element={<ProtectedRoute element={Adventures} />} />

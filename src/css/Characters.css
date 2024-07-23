@@ -5,6 +5,7 @@
   
   .bordered-black{
     border: 2px solid #000000;
+    border-radius: 5px;
   }
 
   .bordered-white{
@@ -56,21 +57,19 @@
 
 
   .hp-ac-table{
-
     border-collapse: collapse; /* Collapse borders between cells */
     width: 100%; /* Make the table full-width */
     height: 100%;
     table-layout: fixed;
-
   }
-
+  
   .hp-ac-table th, .hp-ac-table tr{
+    border-radius: 5px;
     border: 1px solid black; /* Set all borders to 1px solid black */
     padding: 8px; /* Example padding for cells */
     word-wrap: break-word;
     text-align: center; /* Center-align text within cells */
     font-size: 32px;
-    
   }
 
   .hp-bckground{
@@ -79,7 +78,7 @@
     background-position: center; /* Adjust background-position as needed */
     background-repeat: no-repeat; /* Prevent background image from repeating *//* Adjust opacity to fade background image */
     z-index: -1; /* Ensure the pseudo-element is behind the text */
-  
+
   }
 
   .ac-bckground{

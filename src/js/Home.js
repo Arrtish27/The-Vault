@@ -19,7 +19,7 @@ const Home = () => {
       </div>
       <div className="padding-container"></div>
       <div className="button-container">
-        <Link to="/characters" className="button_home">Characters</Link>
+        <Link to="/characters-list" className="button_home">Characters</Link>
         <Link to="/partys" className="button_home">Partys</Link>
         <Link to="/item-search" className="button_home">Item Search</Link>
         <Link to="/adventure" className="button_home">Adventures</Link>
